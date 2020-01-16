@@ -36,17 +36,20 @@ The application runs on port 8888
 ```
 
 ## Functionality
-#### POST /account Create an account
+#### POST /account 
+#### create an account
 Example:
 ```
     curl -v -X POST http://localhost:8888/account -d "{\"accountNumber\":\"1\", \"amount\" : \"100\"}"
 ```
-#### GET /account/{accountNumber} read an account
+#### GET /account/{accountNumber} 
+#### read an account
 Example:
 ```
     curl -v -X GET http://localhost:8888/account/1
 ```
-#### POST /transfer transfer money from one account to another
+#### POST /transfer 
+#### transfer money from one account to another
 Example:
 ```
     curl -v -X POST http://localhost:8888/transfer -d "{\"id\":\"1\", \"accountFrom\" : \"1\", \"accountTo\" : \"2\",  \"amount\" : \"10\"}"
